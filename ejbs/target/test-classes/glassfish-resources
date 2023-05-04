@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "C:\Users\ADMIN\Documents\data-access\ejbs\src\test\resources\glassfish-resources_1_5.dtd">
+<resources>
+  <jdbc-resource enabled="true" jndi-name="jdbc/studinstructor_pool" object-type="user" pool-name="connectionPool">
+    <description>7uu</description>
+  </jdbc-resource>
+  <jdbc-connection-pool allow-non-component-callers="true" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="table" datasource-classname="com.microsoft.sqlserver.jdbc.SQLServerDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="studinstructor_pool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.DataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="true">
+    <property name="URL" value="jdbc:sqlserver://DESKTOP-8KURCBJ\SQLEXPRESS;trustservercertificate=true;databasename=stud_instuctor_bridge"/>
+    <property name="serverName" value="localhost"/>
+    <property name="PortNumber" value="1434"/>
+    <property name="DatabaseName" value="stud_instuctor_bridge"/>
+    <property name="User" value="Neutron"/>
+    <property name="Password" value="letmeIn"/>
+  </jdbc-connection-pool>
+  <jdbc-resource enabled="true" jndi-name="jdbc/schoolproj" object-type="user" pool-name="schoolproj_pool">
+  </jdbc-resource>
+</resources>
